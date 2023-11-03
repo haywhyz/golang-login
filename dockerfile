@@ -32,7 +32,7 @@ RUN go mod download
 COPY *.go ./
 
 # Run tests and build and run
-RUN go test -v
+RUN go test
 
 RUN go build -o /main
 
